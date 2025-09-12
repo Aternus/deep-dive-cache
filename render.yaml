@@ -1,0 +1,11 @@
+services:
+- type: 'web'
+  name: 'deep-dive-cache'
+  runtime: 'node'
+  repo: 'https://github.com/Aternus/deep-dive-cache'
+  plan: 'free'
+  region: 'frankfurt'
+  buildCommand: 'pnpm run build'
+  startCommand: 'pnpm run start'
+  healthCheckPath: '/readiness'
+  autoDeployTrigger: 'commit'
