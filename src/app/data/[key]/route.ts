@@ -13,7 +13,7 @@ export async function GET(
     cacheRequests,
     responseSource,
     cacheSet,
-    sourceOfTruthQueryLatency,
+    sourceQueryLatency,
   } = metrics;
   const keyspace = getKeyspaceOf(key);
 
@@ -81,7 +81,7 @@ export async function GET(
   }
 
   // source of truth
-  const stopTimerSource = sourceOfTruthQueryLatency.startTimer({ keyspace });
+  const stopTimerSource = sourceQueryLatency.startTimer({ keyspace });
   const valueAtSource = "Deep Dive: Cache";
   stopTimerSource();
 

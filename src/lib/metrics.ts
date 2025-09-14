@@ -38,7 +38,7 @@ export function initMetrics() {
     buckets: [0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.25, 0.5, 1, 2],
   });
 
-  const sourceOfTruthQueryLatency = new Histogram({
+  const sourceQueryLatency = new Histogram({
     name: "source_of_truth_query_seconds",
     help: "Source of truth query latency",
     labelNames: ["keyspace"],
@@ -49,7 +49,7 @@ export function initMetrics() {
   register.registerMetric(cacheSet);
   register.registerMetric(responseSource);
   register.registerMetric(cacheLookupLatency);
-  register.registerMetric(sourceOfTruthQueryLatency);
+  register.registerMetric(sourceQueryLatency);
 
   return {
     register,
@@ -57,7 +57,7 @@ export function initMetrics() {
     cacheSet,
     responseSource,
     cacheLookupLatency,
-    sourceOfTruthQueryLatency,
+    sourceQueryLatency,
   };
 }
 

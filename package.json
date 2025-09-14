@@ -24,6 +24,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "dev:sanity": "next build && next start",
+    "prebuild": "pnpm i",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
