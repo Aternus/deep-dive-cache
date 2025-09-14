@@ -7,9 +7,11 @@ Deep dive into Cache and related concepts with this interactive playground.
 ### Infrastructure
 
 1. [Render Web Service, Free tier](https://render.com/docs/free#free-web-services)
-2. 750 instance-hours/month; spins down after 15 minutes of idle time.
-3. Custom Domains.
-4. Managed TLS certificates.
+2. 750 instance-hours / month; spins down after 15 minutes of idle time.
+3. Bandwidth: 100 GB / month
+4. Build: 500 min / month
+5. Custom Domains.
+6. Managed TLS certificates.
 
 ### Backend and Frontend
 

@@ -23,13 +23,16 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev:sanity": "next build && next start",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "lru-cache": "^11.2.1",
     "next": "15.5.3",
+    "prom-client": "^15.1.3",
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
