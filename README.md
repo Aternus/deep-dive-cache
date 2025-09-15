@@ -35,7 +35,7 @@ Deep dive into Cache and related concepts with this interactive playground.
 5. Bandwidth: 10 GB / month
 6. Storage: 256 MB
 
-#### L3
+#### Database
 
 1. [Supabase PostgreSQL, Free tier](https://supabase.com/pricing)
 2. Type: Instance
