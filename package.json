@@ -23,9 +23,9 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
-    "dev:sanity": "next build && next start",
-    "prebuild": "pnpm i",
+    "dev:prod": "pnpm run build:ci && pnpm run start",
     "build": "next build --turbopack",
+    "build:ci": "pnpm i && pnpm run build",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
